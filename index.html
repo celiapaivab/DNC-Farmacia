@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de medicamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+</head>
+<body>
+    <section id="home">
+        <h3> Home </h3>
+        <h3> Cadastro <br>de Medicamentos </h3>
+        <h3> Cadastro <br>de Vacinas </h3>
+        <h3> Cadastro <br>de Cosméticos </h3>
+    </section>
+    <header>
+        <img class="logo" src="logo.svg" alt="Logo da Farmácia">
+        <div>
+            <h1 class="title"> Cadastro de Medicamentos </h1>
+            <h2 class="subTitle"> Farmácia da Gente </h2>
+        </div>
+    </header>
+
+    <section id="secForm">
+        <div>
+            <form >
+                <label for="name"> Nome do Medicamento </label>
+                <input type="text" required id="medName" name="name">
+
+                <label for="quant"> Quantidade Disponível </label>
+                <input type="text" required id="medQuant" name="quant">
+
+                <label for="classe"> Classe de Medicamento </label>
+                <input type="text" required id="medClass" name="classe">
+
+                <button type="submit" onclick="addMed()"> Cadastrar </button>
+            </form>
+        </div>
+
+        <div>
+            <table id="tabela">
+                <tr>
+                    <th> ID </th>
+                    <th> Medicamento </th>
+                    <th> Quantidade </th>
+                    <th> Classe de Medicamento </th>
+                    <th style="background-color: rgba(62, 61, 61, 0.75);"> Remover </th>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
