@@ -31,11 +31,13 @@ function renderTable() {
 
     for (let i = 0; i < meds.length; i++) {
 
-        table.innerHTML = table.innerHTML + `<td> ${i} </td>
-    <td> ${meds[i].medName} </td>
-    <td> ${meds[i].medQuant} </td>
-    <td> ${meds[i].medClass} </td>
-    <td><img src="remove.svg" width="25px" height="25px" onclick="removeMed(${i})"></td>`
+        table.innerHTML = table.innerHTML + `<tr>
+        <td> ${i} </td>
+        <td> ${meds[i].name} </td>
+        <td> ${meds[i].quant} </td>
+        <td> ${meds[i].classe} </td>
+        <td><img src="remove.svg" width="25px" height="25px" onclick="removeMed(${i})"></td>
+        </td>`
     }
 
 }
